@@ -47,18 +47,18 @@
 	\subsection*{Solution}
 	
 	No, we cannot say that probability of getting a head is 1.
-	Let X denote the no. of heads appeared when 6 coins are tossed.
-	Let P be the probability that head is an outcome.
+	Let X denote the no. of heads appeared when 6 coins are tossed. X follows Binomial distribution.
+	Let p be the probability that head is an outcome.
 	
 	
 	\begin{align}
-		P(X=x) = \comb{n}{r}P^r (1-P)^{n-r}
+		\Pr(X=r) = \comb{n}{r}p^r (1-p)^{n-r}
 	\end{align}
 For X=6
 	\begin{align}
-		P(X=6) &= \comb{6}{6}P^6 (1-p)^{6-6} \\
-		P(X=6) &= P^6
+		\Pr(X=6) &= \comb{6}{6}p^6 (1-p)^{0} \\
+		\Pr(X=6) &= p^6
 	\end{align}
-The given event has occured with a probability of $P^{6}$. From this we cannot infer that the value of P is 1 (assuming a non-biased coin). 
+The given event has occured with a probability of $p^{6}$. From this we cannot infer that the value of p is 1 (assuming a non-biased coin). 
 Hence, the given statement is false.
 \end{document}
