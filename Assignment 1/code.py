@@ -8,6 +8,10 @@ from scipy.stats import binom
 
 simlen = 100000
 
+n=6
+
+p=0.5
+
 data_binom = binom.rvs(n,p,size=simlen) #Simulating the event of a coin tossed 6 times and noting the number of heads
 
 fav_count = np.count_nonzero(data_binom == 6)  #Finding the number of times all the outcomes of the 6 tosses is head
